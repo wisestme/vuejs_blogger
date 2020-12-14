@@ -12,6 +12,14 @@ new Vue({
   methods: {
     greet: function(time) {
       return 'Hellooo, Good ' + time + ' ' + this.name;
+    },
+
+    add: function() {
+      return this.age++;
+    },
+
+    subtract: function() {
+      return this.age--;
     }
   }
 });
