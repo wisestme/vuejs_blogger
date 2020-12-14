@@ -15,6 +15,9 @@
     <a v-bind:href="website">Google it</a>
     <input type="text" v-bind:value="name">
     <p v-html="websiteTag"></p>
+    <p>My age is {{age}}</p>
+    <button v-on:click="age++">Add a year</button>
+    <button v-on:click="age--">Subtract a year</button>
   </div>
   <script src="master.js"></script>
 </body>
