@@ -4,7 +4,8 @@ new Vue({
   el: '#vue-app',
   data: {
     name: 'wisestMe',
-    job: 'Developer'
+    job: 'Developer',
+    website: 'https://google.com'
   },
   methods: {
     greet: function(time) {
