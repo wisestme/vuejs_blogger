@@ -7,7 +7,9 @@ new Vue({
     job: 'Developer',
     website: 'https://google.com',
     websiteTag: '<a href="https://google.com">No.1 search engine</a>',
-    age: 25
+    age: 25,
+    x: 0,
+    y: 0
   },
   methods: {
     greet: function(time) {
