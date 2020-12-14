@@ -3,6 +3,7 @@
 new Vue({
   el: '#vue-app',
   data: {
-    name: 'wisestMe'
+    name: 'wisestMe',
+    job: 'Developer'
   }
 });
