@@ -14,12 +14,12 @@ new Vue({
       return 'Hellooo, Good ' + time + ' ' + this.name;
     },
 
-    add: function(x) {
-      this.age += x;
+    add: function(inc) {
+      this.age += inc;
     },
 
-    subtract: function(x) {
-      this.age -= x;
+    subtract: function(dec) {
+      this.age -= dec;
     }
   }
 });
