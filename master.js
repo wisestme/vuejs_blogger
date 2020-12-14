@@ -22,6 +22,12 @@ new Vue({
 
     subtract: function(dec) {
       this.age -= dec;
+    },
+
+    updateCoordinates: function(event){
+      console.log(event);
+      this.x=event.offsetX;
+      this.y = event.offsetY
     }
   }
 });
