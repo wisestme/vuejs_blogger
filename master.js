@@ -5,7 +5,8 @@ new Vue({
   data: {
     name: 'wisestMe',
     job: 'Developer',
-    website: 'https://google.com'
+    website: 'https://google.com',
+    websiteTag: '<a href="https://google.com">No.1 search engine</a>'
   },
   methods: {
     greet: function(time) {
