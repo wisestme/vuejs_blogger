@@ -8,7 +8,7 @@ new Vue({
   },
   methods: {
     greet: function(time) {
-      return 'Hellooo, Good ' + time;
+      return 'Hellooo, Good ' + time + ' ' + this.name;
     }
   }
 });
