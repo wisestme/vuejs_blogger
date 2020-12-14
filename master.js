@@ -15,11 +15,19 @@ new Vue({
     },
 
     add: function() {
-      return this.age++;
+      this.age++;
     },
 
     subtract: function() {
-      return this.age--;
+      this.age--;
+    },
+
+    addTen: function() {
+      this.age += 10;
+    },
+
+    subtractTen: function() {
+      this.age -= 10;
     }
   }
 });
