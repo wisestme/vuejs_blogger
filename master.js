@@ -5,5 +5,10 @@ new Vue({
   data: {
     name: 'wisestMe',
     job: 'Developer'
+  },
+  methods: {
+    greet: function(time) {
+      return 'Hellooo, Good ' + time;
+    }
   }
 });
