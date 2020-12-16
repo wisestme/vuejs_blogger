@@ -24,6 +24,12 @@
       {{x}},{{y}}
     </div>
     <a v-on:click.prevent="clickAction" href="https://google.com">Go to the No.1 search engine</a>
+
+    <h1>Keyboard Events</h1>
+    <label>Name:</label>
+    <input type="text" v-on:keyup.enter="logName" />
+    <label>Age:</label>
+    <input type="text" v-on:keyup.enter="logAge" />
   </div>
   <script src="master.js"></script>
 </body>
