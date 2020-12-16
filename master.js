@@ -25,9 +25,12 @@ new Vue({
     },
 
     updateCoordinates: function(event){
-      console.log(event);
       this.x=event.offsetX;
       this.y = event.offsetY
+    },
+
+    clickAction: function () {
+      alert("Going to google");
     }
   }
 });

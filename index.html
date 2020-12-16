@@ -16,13 +16,14 @@
     <input type="text" v-bind:value="name">
     <p v-html="websiteTag"></p>
     <p>My age is {{age}}</p>
-    <button v-on:click="add(1)">Add a year</button>
+    <button v-on:click.once="add(1)">Add a year</button>
     <button v-on:click="subtract(1)">Subtract a year</button>
     <button v-on:dblclick="add(10)">Add 10 years</button>
     <button v-on:dblclick="subtract(10)">Subtract 10 years</button>
     <div id="canvas" v-on:mousemove="updateCoordinates">
       {{x}},{{y}}
     </div>
+    <a v-on:click.prevent="clickAction" href="https://google.com">Go to the No.1 search engine</a>
   </div>
   <script src="master.js"></script>
 </body>
