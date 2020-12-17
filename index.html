@@ -30,6 +30,14 @@
     <input type="text" v-on:keyup.enter="logName" />
     <label>Age:</label>
     <input type="text" v-on:keyup.enter="logAge" />
+
+    <h1>2-way data binding</h1>
+    <label>Name:</label>
+    <input type="text" v-model="spanName" />
+    <span>{{ spanName }}</span>
+    <label>Age:</label>
+    <input type="text" v-model="spanAge" />
+    <span>{{spanAge}}</span>
   </div>
   <script src="master.js"></script>
 </body>

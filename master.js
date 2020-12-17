@@ -9,7 +9,9 @@ new Vue({
     websiteTag: '<a href="https://google.com">No.1 search engine</a>',
     age: 25,
     x: 0,
-    y: 0
+    y: 0,
+    spanName: '',
+    spanAge: ''
   },
   methods: {
     greet: function(time) {
