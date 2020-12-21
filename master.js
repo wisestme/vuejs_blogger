@@ -11,7 +11,9 @@ new Vue({
     x: 0,
     y: 0,
     spanName: '',
-    spanAge: ''
+    spanAge: '',
+    a: 0,
+    c: 0
   },
   methods: {
     greet: function(time) {
@@ -35,12 +37,43 @@ new Vue({
       alert("Going to google");
     },
 
+    logName(e) {
+      if(e.keyCode === 9) return
+      console.log("You entered your name");
+   },
+   logAge(e) {
+       if(e.keyCode === 9) return
+       console.log("You entered your age");
+   },
+
     logName: function() {
       console.log("You entered your name");
     },
 
-    logAge: function() {
-      console.log("You entered your age");
-    }
+    // logAge: function() {
+    //   console.log("You entered your age");
+    // },
+
+    // addToA: function(){
+    //   console.log('addToA');
+    //   return this.a + this.age;
+    // },
+
+    // addToC: function(){
+    //   console.log('addToB');
+    //   return this.c + this.age;
+    //}
+  },
+
+  computed: {
+    addToA: function(){
+      console.log('addToA');
+      return this.a + this.age;
+    },
+
+    addToC: function(){
+      console.log('addToB');
+      return this.c + this.age;
   }
+}
 });

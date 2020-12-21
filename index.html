@@ -38,6 +38,14 @@
     <label>Age:</label>
     <input type="text" v-model="spanAge" />
     <span>{{spanAge}}</span>
+
+    <h1>Computed Properties</h1>
+    <button v-on:click="a++">Add to A</button>
+    <button v-on:click="c++">Add to B</button>
+    <p>A - {{a}}</p>
+    <p>C - {{c}}</p>
+    <p>Age + A = {{addToA}}</p>
+    <p>Age + C = {{addToC}}</p>
   </div>
   <script src="master.js"></script>
 </body>
