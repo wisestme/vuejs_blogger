@@ -16,8 +16,8 @@
     <input type="text" v-bind:value='name'>
     <p v-html="websiteTag"></p>
     <p>I am {{age}} years old</p>
-    <button v-on:click="addAge">Add a year</button>
-    <button v-on:click="subtractAge">Subtract a year</button>
+    <button v-on:click="addAge(10)">Add a year</button>
+    <button v-on:click="subtractAge(5)">Subtract a year</button>
   </div>
   <script src="master.js"></script>
 </body>
