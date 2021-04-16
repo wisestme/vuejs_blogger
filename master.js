@@ -4,7 +4,8 @@ new Vue({
     name: 'Chijioke',
     job: 'Developer',
     website: 'https://www.google.com',
-    websiteTag: '<a href="https://www.google.com">My website</a>'
+    websiteTag: '<a href="https://www.google.com">My website</a>',
+    age: 30
   },
   methods:{
     greet: function(time){
