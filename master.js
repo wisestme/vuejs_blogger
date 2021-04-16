@@ -2,7 +2,8 @@ new Vue({
   el: '#vue-app',
   data:{
     name: 'Chijioke',
-    job: 'Developer'
+    job: 'Developer',
+    website: 'https://www.google.com'
   },
   methods:{
     greet: function(time){
