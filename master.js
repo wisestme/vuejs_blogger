@@ -1,6 +1,12 @@
 new Vue({
   el: '#vue-app',
   data:{
-    name: 'Chijioke'
+    name: 'Chijioke',
+    job: 'Developer'
+  },
+  methods:{
+    greet: function(){
+      return 'Good morning';
+    }
   }
 })
