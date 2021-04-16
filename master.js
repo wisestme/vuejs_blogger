@@ -1,3 +1,6 @@
 new Vue({
-  el: 'vue-app'
+  el: '#vue-app',
+  data:{
+    name: 'Chijioke'
+  }
 })
