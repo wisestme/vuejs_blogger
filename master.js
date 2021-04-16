@@ -5,7 +5,9 @@ new Vue({
     job: 'Developer',
     website: 'https://www.google.com',
     websiteTag: '<a href="https://www.google.com">My website</a>',
-    age: 30
+    age: 30,
+    x: 0,
+    y: 0,
   },
   methods:{
     greet: function(time){
@@ -17,6 +19,10 @@ new Vue({
     },
     subtractAge: function(decrement){
       this.age -= decrement
+    },
+    updateXY: function(event){
+      this.x = event.offsetX;
+      this.y = event.offsetY;
     }
   }
 })
