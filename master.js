@@ -10,6 +10,13 @@ new Vue({
   methods:{
     greet: function(time){
       return 'Good ' + time + ' ' + this.name;
+    },
+
+    addAge: function(){
+      this.age++
+    },
+    subtractAge: function(){
+      this.age--
     }
   }
 })
