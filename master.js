@@ -23,6 +23,9 @@ new Vue({
     updateXY: function(event){
       this.x = event.offsetX;
       this.y = event.offsetY;
+    },
+    clicker: function(){
+      alert("I have been clicked");
     }
   }
 })

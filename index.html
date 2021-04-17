@@ -20,6 +20,7 @@
     <button v-on:click="addAge(10)">Add a year</button>
     <button v-on:click="subtractAge(5)">Subtract a year</button>
     <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+    <a v-on:click.prevent="clicker" href="https://www.google.com">Google search</a>
   </div>
   <script src="master.js"></script>
 </body>
