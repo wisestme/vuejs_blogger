@@ -7,6 +7,7 @@
   <title>Vue JS Tutorial</title>
   <link rel="stylesheet" href="master.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <!-- <script src="vue.js"></script> -->
 </head>
 <body>
   <div id="vue-app">
@@ -21,6 +22,16 @@
     <button v-on:click="subtractAge(5)">Subtract a year</button>
     <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
     <a v-on:click.prevent="clicker" href="https://www.google.com">Google search</a>
+    <h2>Keyboard Events</h2>
+    <label for="name">Name</label>
+    <input id="name" type="text" v-on:keyup.enter="logName">
+    <label for="age"></label>
+    <input id="age" type="text" v-on:keyup.enter="logAge">
+    <input type="text" v-model:value='ages'>
+    <p>{{ages}}</p>
+    <button v-on:click="addAge(15)">Add 15</button>
+    <button>Subtract 5</button>
+
   </div>
   <script src="master.js"></script>
 </body>

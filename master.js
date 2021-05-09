@@ -6,6 +6,7 @@ new Vue({
     website: 'https://www.google.com',
     websiteTag: '<a href="https://www.google.com">My website</a>',
     age: 30,
+    ages: '',
     x: 0,
     y: 0,
   },
@@ -26,6 +27,12 @@ new Vue({
     },
     clicker: function(){
       alert("I have been clicked");
+    },
+    logName: function(){
+      console.log("my name")
+    },
+    logAge: function(){
+      console.log("my age")
     }
   }
 })
