@@ -35,7 +35,9 @@ new Vue({
     },
     logAge: function(){
       console.log("my age")
-    },
+    }
+  },
+  computed: {
     addToA: function(){
       return this.age + this.a;
     },
