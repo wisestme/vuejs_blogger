@@ -29,8 +29,15 @@
     <input id="age" type="text" v-on:keyup.enter="logAge">
     <input type="text" v-model:value='ages'>
     <p>{{ages}}</p>
+    <p>{{ages}}</p>
     <button v-on:click="addAge(15)">Add 15</button>
-    <button>Subtract 5</button>
+    <button v-on:click="a++">Add to A</button>
+    <button v-on:click="b++">Add to B</button>
+
+    <p>A - {{a}}</p>
+    <p>B - {{b}}</p>
+    <p>Age + A = {{addToA()}}</p>
+    <p>Age + B = {{addToB()}}</p>
 
   </div>
   <script src="master.js"></script>

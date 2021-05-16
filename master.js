@@ -9,6 +9,8 @@ new Vue({
     ages: '',
     x: 0,
     y: 0,
+    a: 2,
+    b: 4
   },
   methods:{
     greet: function(time){
@@ -33,6 +35,12 @@ new Vue({
     },
     logAge: function(){
       console.log("my age")
+    },
+    addToA: function(){
+      return this.age + this.a;
+    },
+    addToB: function(){
+      return this.age + this.b;
     }
   }
 })
