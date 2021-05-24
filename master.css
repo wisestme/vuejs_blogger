@@ -26,5 +26,17 @@ span {
   width: 200px;
   height: 500px;
   margin: 0 auto;
-  background: url(/bag.png);
+  background: url(/bag.png) center no-repeat;
+  background-size: 80%;
+}
+
+#bag-health {
+  width: 200px;
+  border: 2px solid #000;
+  margin: 0 auto 20px auto;
+}
+
+#bag-health div {
+  height: 20px;
+  background: crimson;
 }

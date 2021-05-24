@@ -12,7 +12,8 @@ new Vue({
     a: 2,
     b: 4,
     available: false,
-    nearby: false
+    nearby: false,
+    health: 100
   },
   methods:{
     greet: function(time){
@@ -37,6 +38,9 @@ new Vue({
     },
     logAge: function(){
       console.log("my age")
+    },
+    punch: function(){
+      this.health -= 10;
     }
   },
   computed: {
