@@ -29,6 +29,9 @@ span {
   background: url(/bag.png) center no-repeat;
   background-size: 80%;
 }
+#bag.burst {
+  background: url(/bag-burst.png);
+}
 
 #bag-health {
   width: 200px;
@@ -39,4 +42,9 @@ span {
 #bag-health div {
   height: 20px;
   background: crimson;
+}
+
+#controls {
+  width: 120px;
+  margin: 0 auto;
 }

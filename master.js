@@ -13,7 +13,8 @@ new Vue({
     b: 4,
     available: false,
     nearby: false,
-    health: 100
+    health: 100,
+    ended: false
   },
   methods:{
     greet: function(time){
@@ -41,9 +42,13 @@ new Vue({
     },
     punch: function(){
       this.health -= 10;
+      if(this.health <= 0){
+        this.ended = true;
+      }
     },
-    restart: function {
+    restart: function() {
       this.health = 100;
+      this.ended = false;
     }
   },
   computed: {
