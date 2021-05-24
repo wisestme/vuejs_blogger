@@ -39,6 +39,19 @@
     <p>Age + A = {{addToA}}</p>
     <p>Age + B = {{addToB}}</p>
 
+    <div v-on:click="available = !available" v-bind:class="{available: available}">
+      <span>test dynamic class</span>
+    </div>
+    <div id="bag">
+      
+    </div>
+    <div id="bag-health">
+      <div></div>
+    </div>
+    <div id="controls">
+      <button>punch</button>
+      <button>restart</button>
+    </div>
   </div>
   <script src="master.js"></script>
 </body>
